@@ -5,7 +5,7 @@ from django.db import models
 class Bank(models.Model):
     name=models.CharField(max_length=100)
     father_name=models.CharField(max_length=40)
-    Ac=models.IntegerField(max_length=15)
+    Ac=models.IntegerField()
     
     def __str__(self):
         return self.name
